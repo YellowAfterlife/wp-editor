@@ -81,6 +81,7 @@ class WPEditorAdmin {
     wp_enqueue_script( 'codemirror_javascript' );
     wp_enqueue_script( 'codemirror_css' );
     wp_enqueue_script( 'codemirror_xml' );
+    wp_enqueue_script( 'codemirror_htmlmixed' );
     wp_enqueue_script( 'codemirror_clike' );
     wp_enqueue_script( 'codemirror_dialog' );
     wp_enqueue_script( 'codemirror_search' );
