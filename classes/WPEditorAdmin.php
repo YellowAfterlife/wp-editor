@@ -69,6 +69,7 @@ class WPEditorAdmin {
     wp_enqueue_style( 'codemirror_dialog' );
     wp_enqueue_style( 'codemirror_fullscreen' );
     wp_enqueue_style( 'codemirror_themes' );
+    wp_enqueue_style( 'codemirror_foldgutter' );
     wp_enqueue_style( 'chosen' );
 
     if ( ! wp_script_is( 'codemirror', 'enqueued' ) ) {
@@ -84,6 +85,9 @@ class WPEditorAdmin {
     wp_enqueue_script( 'codemirror_dialog' );
     wp_enqueue_script( 'codemirror_search' );
     wp_enqueue_script( 'codemirror_searchcursor' );
+    wp_enqueue_script( 'codemirror_foldcode' );
+    wp_enqueue_script( 'codemirror_foldgutter' );
+    wp_enqueue_script( 'codemirror_foldxml' );
     wp_enqueue_script( 'attrchange' );
     wp_enqueue_script( 'chosen' );
   }

@@ -266,6 +266,9 @@ tags = {};
 				
 			},
 			extraKeys: {
+				"Ctrl-Q": function(cm) {
+					cm.foldCode(cm.getCursor());
+				},
 				"F11": function(cm) {
 					if (!cm.getOption("fullScreen")) {
 						$('#ed_toolbar').addClass('fullscreen');
@@ -281,7 +284,9 @@ tags = {};
 					$('#ed_toolbar').removeClass('fullscreen');
 					$(window).resize();
 				}
-			}
+			},
+			foldGutter: true,
+			gutters: ["CodeMirror-linenumbers", "CodeMirror-foldgutter"]
 		});
 		$('.CodeMirror').css('font-size', WPEPosts.fontSize);
 		$('.CodeMirror').css('top', $('#content').css('margin-top'));
